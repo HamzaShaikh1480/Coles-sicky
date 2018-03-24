@@ -38,6 +38,7 @@
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-googlemaps": "^2.2.8",
+    "cordova-plugin-ionic": "^4.1.3",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-native-spinner": "^1.1.3",
@@ -73,6 +74,14 @@
         "API_KEY_FOR_IOS": "AIzaSyD0bFjFPUBkq5x6hDzvkXW53RtSV0g4e1w",
         "PLAY_SERVICES_VERSION": "11.8.0",
         "ANDROID_SUPPORT_V4_VERSION": "24.1.0"
+      },
+      "cordova-plugin-ionic": {
+        "APP_ID": "b7fa2744",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "auto",
+        "WARN_DEBUG": "true",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
       }
     },
     "platforms": [
