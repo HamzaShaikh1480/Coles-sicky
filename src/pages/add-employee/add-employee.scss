@@ -1,0 +1,35 @@
+page-add-employee {
+
+    .myview {
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/colessicky.appspot.com/o/bg.jpg?alt=media&token=c52c226e-9c72-4a0a-ac2c-f3d060f718f6');
+    }
+
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: #B6B1B1;
+        margin-top: 15%; 
+    }
+
+    #empAdd{
+        margin-left: 10%;
+        border: 1px solid white;
+        border-radius: 10%;
+        text-align: center;
+        margin-top: 1%;
+        height: 35px;
+        width: 90%;
+    }
+
+    #empAddBtn{
+        margin-left: 10%;
+        border: 1px solid white;
+        border-radius: 5%;
+        text-align: center;
+        margin-top: 20%;
+        height: 7%;
+        width: 80%;
+        background-color: #f53d3d;
+    }
+    
+}

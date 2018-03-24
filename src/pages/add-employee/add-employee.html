@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Add Employee</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="myview">
+
+
+  <h2><b>ADD EMPLOYEE</b></h2>
+
+  <input style="margin-top:20%" id="empAdd" type="text" [(ngModel)]="name" #ctl="ngModel" placeholder="Name">
+  <input id="empAdd" type="number" [(ngModel)]="contact" #ctl="ngModel" placeholder="Contact">
+  <input id="empAdd" type="text" [(ngModel)]="code" #ctl="ngModel" placeholder="Employee Code">
+
+  <input id="empAddBtn" type="button" value="ADD EMPLOYEE" (click)="createEmployee(name, contact, code)">
+
+
+</ion-content>

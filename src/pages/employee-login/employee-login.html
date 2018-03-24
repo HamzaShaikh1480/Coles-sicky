@@ -1,0 +1,22 @@
+<ion-header>
+
+</ion-header>
+
+
+<ion-content id="main" padding>
+
+    <h3 style="text-align:center; margin-top:20%"> <font color="#ffffff">C O L E S </font><font color="#1d6ea7">-</font> <font color="red">S I C K Y</font></h3>
+
+
+  <input id="codeInput" [(ngModel)]="code_emp" type="text" placeholder="Employee Code" (change)="checkLogin()">
+<h4 style="color:white; text-align:center" *ngIf='code_emp !== undefined && code_emp !== ""'>Checking Account...</h4>
+  <!-- <input id="btn" type="button" value="SIGN IN" (click)="gotoMain(code_emp)"> -->
+
+  <div *ngFor="let data of person">
+      <!-- <ion-label *ngIf="data.emp_code == code_emp" [(ngModel)]="state"> Offline</ion-label> -->
+      <!-- <ion-toggle *ngIf="data.emp_code == code_emp" [(ngModel)]="isToggled" checked="true" (ionChange)="notify()"></ion-toggle>  -->
+      <input *ngIf="data.emp_code == code_emp" id="btn" type="button" value="SIGN IN" (click)="gotoMain(data.name, data.emp_code, data.id, data.status)">
+    </div>
+
+
+</ion-content>

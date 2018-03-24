@@ -1,0 +1,8 @@
+{
+  "name": "coles-sicky",
+  "app_id": "b7fa2744",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

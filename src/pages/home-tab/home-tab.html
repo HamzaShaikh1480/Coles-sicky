@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Coles-Sicky</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-item-group *ngFor="let data of persons">
+      
+        <ion-item *ngIf=" data.status == 'online'">
+
+      <ion-card>
+          <ion-card-header>
+           <h3 style="text-align: center"> <b>{{ data.name }}</b> <img style="height:10px; width:10px; float: right;" src="https://firebasestorage.googleapis.com/v0/b/colessicky.appspot.com/o/onlinenew.png?alt=media&token=2501d5d1-128c-4787-a435-987648b58a2e"> </h3>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="text-align: center">{{ data.emp_code }}</p>
+
+            <input id="btn" type="button" value="HIRE" (click)="changeStatus(data.id)">
+            <input id="btn" type="button" value="SEE ON MAP"  (click)="openMap()">
+          </ion-card-content>
+        </ion-card>
+
+      </ion-item>
+      </ion-item-group>
+
+      <br/><br/><br/><br/><br/>
+
+</ion-content>
